@@ -1,3 +1,7 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+/*
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../../node_modules/bootstrap/scss/functions";
 
@@ -23,4 +27,68 @@
 // 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
-// 6. Add additional custom code here
+// 6. Add additional custom code here*/
+
+
+@include media-breakpoint-between(xs,md) {
+  .card-body{
+    .card-title{
+      text-align: center;
+    }
+
+    .card-text{
+      text-align: center;
+    }
+  }
+
+  .row > * {
+    display: flex;
+    justify-content: center;
+  }
+
+  .show-mobile{
+    display: block;
+  }
+
+  .hide-mobile{
+    display: none;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .show-mobile{
+    display: none;
+  }
+
+  .hide-mobile{
+    display: block;
+  }
+
+}
+
+#header{
+  background: url('../img/bg-header.jpg');
+  background-size: cover;
+
+}
+
+#footer{
+  background: url('../img/bg-footer.png');
+  height: 120px;
+}
+
+#line{
+  border-top: 1px solid #e5e5e5;
+  margin: 15px 0 0;
+  padding: 13px 0 25px;
+}
+
+.img-blog {
+  width: 170px;
+  height: 180px;
+  margin: 1vh;
+}
+
+h5{
+  color: $orange-500;
+}
