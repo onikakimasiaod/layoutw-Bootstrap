@@ -55,6 +55,14 @@
   }
 }
 
+@include media-breakpoint-down(md){
+
+  .card{
+    max-width: 45vh;
+  }
+
+}
+
 @include media-breakpoint-up(md) {
   .show-mobile{
     display: none;
