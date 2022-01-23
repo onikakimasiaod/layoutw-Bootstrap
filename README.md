@@ -5,4 +5,9 @@ P4 - DIW + DWEC
 - Collapse
 - Navbar
 - Cards
-- Pop over
+- Buttons --> [responsive (toggle)]
+
+# MILLORES
+- Blog: Millora de ses cards modo responsive
+- Pagination: Modo responsive només se veuen 3
+- All pages active
