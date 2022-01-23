@@ -11161,7 +11161,7 @@ textarea.form-control-lg {
 #footer {
   background: url("../img/bg-footer.png");
   height: 120px;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
