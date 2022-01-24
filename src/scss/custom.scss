@@ -4,6 +4,7 @@
 
 @include media-breakpoint-between(xs,md) {
   .card-body{
+
     .card-title{
       text-align: center;
     }
@@ -19,7 +20,8 @@
   }
 
   .show-mobile{
-    display: block;
+    display: flex;
+    justify-content: center;
   }
 
   .hide-mobile{
@@ -30,7 +32,13 @@
 @include media-breakpoint-down(md){
 
   .card{
-    max-width: 45vh;
+    max-width: 150vh;
+  }
+
+  .img-blog {
+    max-width: 50vh;
+    max-height: 50vh;
+    margin: 1vh;
   }
 
 }

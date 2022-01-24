@@ -11132,7 +11132,8 @@ textarea.form-control-lg {
   }
 
   .show-mobile {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
 
   .hide-mobile {
@@ -11141,7 +11142,13 @@ textarea.form-control-lg {
 }
 @media (max-width: 767.98px) {
   .card {
-    max-width: 45vh;
+    max-width: 150vh;
+  }
+
+  .img-blog {
+    max-width: 50vh;
+    max-height: 50vh;
+    margin: 1vh;
   }
 }
 @media (min-width: 768px) {
