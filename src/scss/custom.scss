@@ -1,6 +1,9 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
+/*OVERRIDING THE COLORS*/
+$cyan: #5bdee6;
+$gray-100: #e5e5e5;
+$gray-500:#959595;
 
-// 6. Add additional custom code here*/
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 @include media-breakpoint-between(xs,md) {
   .card-body{
@@ -59,16 +62,36 @@
   background: url('../img/bg-header.jpg');
   background-size: cover;
 }
+
 #footer{
   background: url('../img/bg-footer.png');
+  background-repeat: round;
+  max-height: 130vh;
+  min-height: 120px;
   height: 120px;
   position: relative;
   bottom: 0;
+  color: $cyan;
+  font-size: 2vh;
+
+  div{
+    margin:2vh;
+  }
+
+  .copyright{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .social-media{
+    display:flex;
+    gap:3vh;
+    font-size: 5vh;
+  }
 }
 
 //blog.html
 #line{
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid $gray-100;
   margin: 15px 0 0;
   padding: 13px 0 25px;
 }
@@ -81,10 +104,15 @@
 //all titles
 h5{
   color: $orange-500;
+  font-family: 'Maven Pro', sans-serif;
 }
 
 .textJustified {
   text-align: justify;
 }
 
+p{
+  color: $gray-500;
+  font-family: 'Raleway', sans-serif;
+}
 
